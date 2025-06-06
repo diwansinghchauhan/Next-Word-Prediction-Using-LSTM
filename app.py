@@ -31,9 +31,9 @@ def generate_text(model, tokenizer, seed_text, max_len, num_words):
     return output_text
 
 # streamlit app
-st.title("Text Generation With LSTM")
+st.title("Next Word Prediction With LSTM")
 input_text=st.text_input("Enter the sequence of words")
-if st.button("Generate Text"):
+if st.button("Predict Next Word"):
         max_len=model.input_shape[1]+1
         next_word = generate_text(model, tokenizer, input_text, max_len, num_words=3)
-        st.write(next_word)
+        st.write(f'Next word: {next_word}')
