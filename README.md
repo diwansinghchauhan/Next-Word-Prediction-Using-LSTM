@@ -1,15 +1,47 @@
-## Project Description: Next Word Prediction Using LSTM
-### Project Overview:
-This project aims to develop a deep learning model for predicting the next word in a given sequence of words. The model is built using Long Short-Term Memory (LSTM) networks, which are well-suited for sequence prediction tasks. The project includes the following steps:
 
-1- Data Collection: We use the WikiText-2 dataset, a curated collection of high-quality Wikipedia articles. This dataset offers clean, structured natural language, making it well-suited for training and evaluating next-word prediction models.
+# Next Word Prediction Using LSTM
 
-2- Data Preprocessing: The text data is tokenized, converted into sequences, and padded to ensure uniform input lengths. The sequences are then split into training and testing sets.
+This project builds a text generation model that predicts the next word based on input sequences.
+It uses Long Short-Term Memory (LSTM) networks and is trained on the WikiText-2 dataset ideal for natural language generation tasks.
 
-3- Model Building: An LSTM model is constructed with an embedding layer, two LSTM layers, and a dense output layer with a softmax activation function to predict the probability of the next word.
+Deployed using Streamlit for real-time interaction.
 
-4- Model Training: The model is trained using the prepared sequences, with early stopping implemented to prevent overfitting. Early stopping monitors the validation loss and stops training when the loss stops improving.
 
-5- Model Evaluation: The model is evaluated using a set of example sentences to test its ability to predict the next word accurately.
+## Screenshots
 
-6- Deployment: A Streamlit web application is developed to allow users to input a sequence of words and get the predicted next word in real-time.
+![Image](https://github.com/user-attachments/assets/a6531534-7eeb-4bee-8bec-e0cf45f4e31b)
+
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  https://next-word-prediction-using-lstm-diwan.streamlit.app/
+```
+
+
+## Features
+
+- Text preprocessing (tokenization, padding, sequence creation)
+- LSTM-based sequence modeling with embedding layer
+- EarlyStopping to prevent overfitting
+- Interactive real-time predictions with Streamlit
+
+
+## Tech Stack
+
+Python
+
+TensorFlow / Keras
+
+NumPy, Pandas
+
+Streamlit (for deployment)
+
+WikiText-2 (dataset)
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://diwansinghchauhan.github.io/portfolio/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/diwansinghchauhan/)
